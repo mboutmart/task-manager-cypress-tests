@@ -5,7 +5,7 @@ Below are the steps to set up the application, install Cypress, and run the auto
 1. Installation and Setup
 2. Running the Application
 3. Cypress Test Automation
-4. Additional Information
+4. Covered test cases
 ### Installation and Setup
 1. Clone the repository to your local machine:
  git clone https://github.com/mboutmart/task-manager-cypress-tests.git
@@ -31,6 +31,15 @@ Cypress is used for automating end-to-end tests. The automated tests are located
 3. Or run the tests in headless mode :
    npx cypress run
 
-### Additional Information
-1. For more details on the application, refer to the official MERN Task Manager repository:
- https://github.com/aayush301/MERN-task-manager
+### Covered test cases
+The Cypress test suite includes automated tests for core user functionalities in both positive and negative scenarios. These cover user registration, Login, and task creation flows. Below are the executed test cases:
+
+1-1-signupFail.cy.ts – Tests signup with invalid inputs (e.g., missing fields, invalid email).
+
+1-2-signupPass.cy.ts – Tests successful signup with valid user data.
+
+2-1-signinFail.cy.ts – Tests login with incorrect credentials or empty fields.
+
+2-2-signinPass.cy.ts – Tests successful login with valid credentials.
+
+3-createTask.cy.ts – Tests successful creation of a new task after Login.
